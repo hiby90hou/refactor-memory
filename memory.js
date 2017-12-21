@@ -219,26 +219,6 @@ while (shuffle20 === shuffle1 || shuffle20 === shuffle2 || shuffle20 === shuffle
 var cardShuffle20 = shuffleArray[shuffle20];
 
 //Variables to activate card onclick functions.
-// var click[0] = 1;
-// var click[1] = 1;
-// var click[2] = 1;
-// var click[3] = 1;
-// var click[4] = 1;
-// var click[5] = 1;
-// var click[6] = 1;
-// var click[7] = 1;
-// var click[8] = 1;
-// var click[9] = 1;
-// var click[10] = 1;
-// var click[11] = 1;
-// var click[12] = 1;
-// var click[13] = 1;
-// var click[14] = 1;
-// var click[15] = 1;
-// var click[16] = 1;
-// var click[17] = 1;
-// var click[18] = 1;
-// var click[19] = 1;
 var click = [];
 for(var i=0;i<20;i++){
 	click.push(1);
@@ -273,86 +253,12 @@ function resetThird() {
 }
 
 function noMatch() { 
-//Resetting click values from previous incorrect guess.
-	if (click[0] === 2) {
-		click[0] = 1;
-		console.log("Card 1 now equals " + click[0]);
-	}
-	if (click[1] === 2) {
-		click[1] = 1;
-		console.log("Card 2 now equals " + click[1]);
-	}
-	if (click[2] === 2) {
-		click[2] = 1;
-		console.log("Card 3 now equals " + click[2]);
-	}
-	if (click[3] === 2) {
-		click[3] = 1;
-		console.log("Card 4 now equals " + click[3]);
-	}
-	if (click[4] === 2) {
-		click[4] = 1;
-		console.log("Card 5 now equals " + click[4]);
-	}
-	if (click[5] === 2) {
-		click[5] = 1;
-		console.log("Card 6 now equals " + click[5]);
-	}
-	if (click[6] === 2) {
-		click[6] = 1;
-		console.log("Card 7 now equals " + click[6]);
-	}
-	if (click[7] === 2) {
-		click[7] = 1;
-		console.log("Card 8 now equals " + click[7]);
-	}
-	if (click[8] === 2) {
-		click[8] = 1;
-		console.log("Card 9 now equals " + click[8]);
-	}
-	if (click[9] === 2) {
-		click[9] = 1;
-		console.log("Card 10 now equals " + click[9]);
-	}
-	if (click[10] === 2) {
-		click[10] = 1;
-		console.log("Card 11 now equals " + click[10]);
-	}
-	if (click[11] === 2) {
-		click[11] = 1;
-		console.log("Card 12 now equals " + click[11]);
-	}
-	if (click[12] === 2) {
-		click[12] = 1;
-		console.log("Card 13 now equals " + click[12]);
-	}
-	if (click[13] === 2) {
-		click[13] = 1;
-		console.log("Card 14 now equals " + click[13]);
-	}
-	if (click[14] === 2) {
-		click[14] = 1;
-		console.log("Card 15 now equals " + click[14]);
-	}
-	if (click[15] === 2) {
-		click[15] = 1;
-		console.log("Card 16 now equals " + click[15]);
-	}
-	if (click[16] === 2) {
-		click[16] = 1;
-		console.log("Card 17 now equals " + click[16]);
-	}
-	if (click[17] === 2) {
-		click[17] = 1;
-		console.log("Card 18 now equals " + click[17]);
-	}
-	if (click[18] === 2) {
-		click[18] = 1;
-		console.log("Card 19 now equals " + click[18]);
-	}
-	if (click[19] === 2) {
-		click[19] = 1;
-		console.log("Card 20 now equals " + click[19]);
+	//Resetting click values from previous incorrect guess.
+	for(var i=0;i<click.length;i++){
+		if(click[i]===2){
+			click[i] = 1;
+			console.log("Card 1 now equals " + click[i]);
+		}
 	}
 }
 
